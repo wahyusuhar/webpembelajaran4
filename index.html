@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Pembelajaran</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="assets/images/laptop.png" type="image/png">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body id="top">
+  <div id="loading-overlay" class="loading-overlay">
+    <div class="loader">Loading...</div>
+</div>
+  <!-- 
+    - #HEADER
+  -->
+<!-- Elemen Loading -->
+<div id="loading-overlay" class="loading-overlay">
+  <div class="spinner"></div>
+</div>
+
+  <header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+   <div class="header-top">
+  <div class="container">
+    <a href="Contact.html#kontact" class="helpline-box">
+      <div class="icon-box">
+        <ion-icon name="call-outline"></ion-icon>
+      </div>
+      <div class="wrapper">
+        <p class="helpline-title">Untuk Pertanyaan Lebih Lanjut :</p>
+        <p class="helpline-number">+01 (123) 4567 90</p>
+      </div>
+    </a>
+    
+    <div class="header-btn-group">
+      <!-- Pindahkan ikon sosial media ke sini -->
+      <ul class="social-list">
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </a>
+        </li>
+      </ul>
+      
+      <!-- Hapus ikon pencarian -->
+      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <a href="" class="logo">
+          <img src="./assets/images/Logo4-removebg-preview.png" alt="Tourly logo" style="width: 100px; height: 50px;">
+        </a>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/Logo4-removebg-preview.png" alt="Tourly logo">
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>Beranda</a>
+            </li>
+            <li>
+              <a href="#about" class="navbar-link" data-nav-link>Tentang Kami</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="navbar-link" data-nav-link>Materi Pembelajaran</a>
+              <div class="dropdown-content">
+                <a href="#materials">Materi PDF</a>
+                <a href="#package">Materi Video</a>
+              </div>
+            </li>
+            
+              <li>
+                <a href="soal.html#soal" class="navbar-link" data-nav-link>Soal Latihan</a>
+              </li>
+            
+            <li>
+              <a href="quizz.html#quiz" class="navbar-link" data-nav-link>Kuis</a>
+            </li>
+            <li>
+              <a href="contact.html#kontact" class="navbar-link" data-nav-link>Kontak</a>
+            </li>
+          
+           
+          </ul>
+          
+
+
+
+        </nav>
+
+        <!-- <button class="btn btn-primary">Login</button> -->
+         <div class="one">
+          <a href="login.html" >LOGIN</a>
+         </div>
+        
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+   <!-- HERO SECTION -->
+<section class="hero" id="home">
+  <div class="container">
+    <h2 class="h1 hero-title" style="color: #007bff; text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);">Online Class</h2>
+    <p class="hero-text">
+      Temukan berbagai materi pembelajaran interaktif yang dirancang untuk membantu kamu berkembang. Dari kursus dasar hingga topik lanjutan, mari mulai perjalananmu menuju pengetahuan yang lebih dalam.
+    </p>
+  </div>
+</section>
+
+      
+
+
+
+
+
+      <!-- 
+        - # SEARCH
+      -->
+      <section class="course-search">
+        <div class="container">
+          <form action="" class="course-search-form">
+      
+            <div class="input-wrapper">
+              <label for="course-name" class="input-label">Cari Materi Pembelajaran*</label>
+              <input type="text" name="course-name" id="course-name" required placeholder="Masukkan Nama Materi"
+                class="input-field">
+            </div>
+      
+            <div class="input-wrapper">
+              <label for="course-type" class="input-label">Tipe Materi*</label>
+              <select name="course-type" id="course-type" required class="input-field">
+                <option value="">Pilih Tipe Materi</option>
+                <option value="pdf">PDF</option>
+                <option value="video">Video</option>
+                <option value="quiz">Kuis</option>
+              </select>
+            </div>
+      
+            <div class="input-wrapper">
+              <label for="student-level" class="input-label">Tingkat Siswa*</label>
+              <select name="student-level" id="student-level" required class="input-field">
+                <option value="">Pilih Tingkat Siswa</option>
+                <option value="beginner">Pemula</option>
+                <option value="intermediate">Menengah</option>
+                <option value="advanced">Lanjutan</option>
+              </select>
+            </div>
+      
+            <div class="input-wrapper">
+              <label for="date" class="input-label">Tanggal Akses*</label>
+              <input type="date" name="date" id="date" required class="input-field">
+            </div>
+      
+            <button type="submit" class="btn btn-secondary">Cari Materi</button>
+      
+          </form>
+        </div>
+      </section>
+      
+      
+
+
+
+      <!-- tentang kami -->
+
+      <section class="about-us" id="about">
+        <div class="container">
+          <!-- Section Title -->
+          <div class="section-title">
+            <h2 class="h1">Tentang Kami</h2>
+            <p class="section-description">
+              Kami adalah platform pembelajaran online yang berkomitmen untuk memberikan pengalaman belajar yang efektif dan menyenangkan bagi semua siswa.
+            </p>
+          </div>
+      
+          <!-- Mission and Vision -->
+          <div class="mission-vision">
+            <div class="mission">
+              <h3>Misi Kami</h3>
+              <p>
+                Kami bertujuan untuk menyediakan materi pembelajaran yang mudah diakses dan dapat dipahami oleh setiap siswa, dengan pendekatan yang personal dan terstruktur.
+              </p>
+            </div>
+            <div class="vision">
+              <h3>Visi Kami</h3>
+              <p>
+                Menjadi platform pendidikan terdepan yang mendukung pengembangan diri siswa di berbagai bidang, dengan menggunakan teknologi untuk mencapai tujuan mereka.
+              </p>
+            </div>
+          </div>
+      
+      
+        </div>
+      </section>
+
+      <section class="material-section" id="materials">
+        <div class="container">
+          <p class="section-subtitle" data-aos="zoom-in" data-aos-duration="500">Materi Pembelajaran</p>
+          <h2 class="h2 section-title" data-aos="zoom-in" data-aos-duration="500">Lihat Materi Pembelajaran Kami</h2>
+          
+          <div class="material-slider">
+            <!-- Materi 1 -->
+            <div class="material-item">
+              <div class="material-content">
+                <div class="material-info">
+                  <img src="/assets/images/pdf.png" alt="Pengantar Pemrograman" class="material-image">
+                  <h4 class="material-title">Materi 1: Pengantar Pemrograman</h4>
+                  <p class="material-description">Pelajari dasar-dasar pemrograman untuk memulai perjalanan Anda.</p>
+                  <a href="public/jurnal 1.pdf" class="btn btn-primary" download="jurnal 1.pdf">Unduh Materi PDF</a>
+                </div>
+              </div>
+            </div>
+      
+          
+            <div class="material-item">
+              <div class="material-content">
+                <div class="material-info">
+                  <img src="/assets/images/pdf.png" alt="HTML dan CSS" class="material-image">
+                  <h4 class="material-title">Materi 2: HTML dan CSS</h4>
+                  <p class="material-description">Pelajari cara membuat struktur web dengan HTML dan mendesain tampilan menggunakan CSS.</p>
+                  <a href="public/jurnal 2.pdf" class="btn btn-primary" download="jurnal 2.pdf">Unduh Materi PDF</a>
+                </div>
+              </div>
+            </div>
+            <div class="material-item">
+              <div class="material-content">
+                <div class="material-info">
+                  <img src="/assets/images/pdf.png" alt="HTML dan CSS" class="material-image">
+                  <h4 class="material-title">Materi 2: HTML dan CSS</h4>
+                  <p class="material-description">Pelajari cara membuat struktur web dengan HTML dan mendesain tampilan menggunakan CSS.</p>
+                  <a href="public/jurnal 2.pdf" class="btn btn-primary" download="jurnal 2.pdf">Unduh Materi PDF</a>
+                </div>
+              </div>
+            </div>
+            <div class="material-item">
+              <div class="material-content">
+                <div class="material-info">
+                  <img src="/assets/images/pdf.png" alt="HTML dan CSS" class="material-image">
+                  <h4 class="material-title">Materi 2: HTML dan CSS</h4>
+                  <p class="material-description">Pelajari cara membuat struktur web dengan HTML dan mendesain tampilan menggunakan CSS.</p>
+                  <a href="public/jurnal 2.pdf" class="btn btn-primary" download="jurnal 2.pdf">Unduh Materi PDF</a>
+                </div>
+              </div>
+            </div>
+            <div class="material-item">
+              <div class="material-content">
+                <div class="material-info">
+                  <img src="/assets/images/pdf.png" alt="HTML dan CSS" class="material-image">
+                  <h4 class="material-title">Materi 2: HTML dan CSS</h4>
+                  <p class="material-description">Pelajari cara membuat struktur web dengan HTML dan mendesain tampilan menggunakan CSS.</p>
+                  <a href="public/jurnal 2.pdf" class="btn btn-primary" download="jurnal 2.pdf">Unduh Materi PDF</a>
+                </div>
+              </div>
+            </div>
+            <div class="material-item">
+              <div class="material-content">
+                <div class="material-info">
+                  <img src="/assets/images/pdf.png" alt="HTML dan CSS" class="material-image">
+                  <h4 class="material-title">Materi 2: HTML dan CSS</h4>
+                  <p class="material-description">Pelajari cara membuat struktur web dengan HTML dan mendesain tampilan menggunakan CSS.</p>
+                  <a href="public/jurnal 2.pdf" class="btn btn-primary" download="jurnal 2.pdf">Unduh Materi PDF</a>
+                </div>
+              </div>
+            </div>
+            <div class="material-item">
+              <div class="material-content">
+                <div class="material-info">
+                  <img src="/assets/images/pdf.png" alt="HTML dan CSS" class="material-image">
+                  <h4 class="material-title">Materi 2: HTML dan CSS</h4>
+                  <p class="material-description">Pelajari cara membuat struktur web dengan HTML dan mendesain tampilan menggunakan CSS.</p>
+                  <a href="public/jurnal 2.pdf" class="btn btn-primary" download="jurnal 2.pdf">Unduh Materi PDF</a>
+                </div>
+              </div>
+            </div>
+            <div class="material-item">
+              <div class="material-content">
+                <div class="material-info">
+                  <img src="/assets/images/pdf.png" alt="HTML dan CSS" class="material-image">
+                  <h4 class="material-title">Materi 2: HTML dan CSS</h4>
+                  <p class="material-description">Pelajari cara membuat struktur web dengan HTML dan mendesain tampilan menggunakan CSS.</p>
+                  <a href="public/jurnal 2.pdf" class="btn btn-primary" download="jurnal 2.pdf">Unduh Materi PDF</a>
+                </div>
+              </div>
+            </div>
+      
+           
+          </div>
+        </div>
+      </section>
+      
+      
+      
+      
+
+
+<!--  #MATERI PEMBELAJARAN  -->
+<section class="package" id="package">
+  <div class="container2">
+    <p class="section-subtitle" >Materi Pembelajaran</p>
+
+    <h2 class="h2 section-title" >Lihat Materi Pembelajaran Kami</h2>
+
+    <p class="section-text">
+      Pelajari berbagai topik menarik melalui video tutorial yang disajikan dari YouTube. Nikmati pengalaman belajar yang interaktif dan mudah diikuti.
+    </p>
+
+    <ul class="package-list">
+      <li>
+        <div class="package-card">
+          <figure class="card-banner">
+            <!-- Link YouTube -->
+            <iframe 
+              width="100%" 
+              height="315" 
+              src="https://www.youtube.com/embed/4HrweW4IqJc" 
+              title="Materi Pembelajaran 1" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </figure>
+      
+          <div class="card-content">
+            <h3 class="h3 card-title">Fisika</h3>
+            <p class="card-text">
+              Fisika adalah ilmu tentang segalanya. Selamat datang, ke ilmu yang mengatur, segala hal di dunia ini.
+            </p>
+            <ul class="card-meta-list">
+              <li class="card-meta-item">
+                <div class="meta-box">
+                  <ion-icon name="time"></ion-icon>
+                  <p class="text">Durasi: 11:26 Menit</p>
+                </div>
+              </li>
+              <li class="card-meta-item">
+                <div class="meta-box">
+                  <ion-icon name="people"></ion-icon>
+                  <p class="text">Jumlah Siswa: 50+</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+      
+          <div class="card-price">
+            <div class="wrapper">
+              <p class="reviews">(10 ulasan)</p>
+              <div class="card-rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+            </div>
+            <p class="price">Gratis</p>
+          </div>
+        </div>
+      </li>
+      <!-- ------------------------------------ -->
+
+      <li>
+        <div class="package-card" >
+          <figure class="card-banner">
+            <!-- Link YouTube -->
+            <iframe 
+              width="100%" 
+              height="315" 
+              src="https://www.youtube.com/embed/4HrweW4IqJc" 
+              title="Materi Pembelajaran 1" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </figure>
+      
+          <div class="card-content">
+            <h3 class="h3 card-title">Fisika</h3>
+            <p class="card-text">
+              Fisika adalah ilmu tentang segalanya. Selamat datang, ke ilmu yang mengatur, segala hal di dunia ini.
+            </p>
+            <ul class="card-meta-list">
+              <li class="card-meta-item">
+                <div class="meta-box">
+                  <ion-icon name="time"></ion-icon>
+                  <p class="text">Durasi: 11:26 Menit</p>
+                </div>
+              </li>
+              <li class="card-meta-item">
+                <div class="meta-box">
+                  <ion-icon name="people"></ion-icon>
+                  <p class="text">Jumlah Siswa: 50+</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+      
+          <div class="card-price">
+            <div class="wrapper">
+              <p class="reviews">(10 ulasan)</p>
+              <div class="card-rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+            </div>
+            <p class="price">Gratis</p>
+          </div>
+        </div>
+      </li>
+
+      <!-- ------------------------------------ -->
+
+      <li>
+        <div class="package-card">
+          <figure class="card-banner">
+            <!-- Link YouTube-->
+            <iframe 
+              width="100%" 
+              height="315" 
+              src="https://www.youtube.com/embed/4HrweW4IqJc" 
+              title="Materi Pembelajaran 1" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </figure>
+      
+          <div class="card-content">
+            <h3 class="h3 card-title">Fisika</h3>
+            <p class="card-text">
+              Fisika adalah ilmu tentang segalanya. Selamat datang, ke ilmu yang mengatur, segala hal di dunia ini.
+            </p>
+            <ul class="card-meta-list">
+              <li class="card-meta-item">
+                <div class="meta-box">
+                  <ion-icon name="time"></ion-icon>
+                  <p class="text">Durasi: 11:26 Menit</p>
+                </div>
+              </li>
+              <li class="card-meta-item">
+                <div class="meta-box">
+                  <ion-icon name="people"></ion-icon>
+                  <p class="text">Jumlah Siswa: 50+</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+      
+          <div class="card-price">
+            <div class="wrapper">
+              <p class="reviews">(10 ulasan)</p>
+              <div class="card-rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+            </div>
+            <p class="price">Gratis</p>
+          </div>
+        </div>
+      </li>
+
+      <!-- ------------------------------------ -->
+
+      <li>
+        <div class="package-card">
+          <figure class="card-banner">
+            <!-- Link YouTube -->
+            <iframe 
+              width="100%" 
+              height="315" 
+              src="https://www.youtube.com/embed/4HrweW4IqJc" 
+              title="Materi Pembelajaran 1" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </figure>
+      
+          <div class="card-content">
+            <h3 class="h3 card-title">Fisika</h3>
+            <p class="card-text">
+              Fisika adalah ilmu tentang segalanya. Selamat datang, ke ilmu yang mengatur, segala hal di dunia ini.
+            </p>
+            <ul class="card-meta-list">
+              <li class="card-meta-item">
+                <div class="meta-box">
+                  <ion-icon name="time"></ion-icon>
+                  <p class="text">Durasi: 11:26 Menit</p>
+                </div>
+              </li>
+              <li class="card-meta-item">
+                <div class="meta-box">
+                  <ion-icon name="people"></ion-icon>
+                  <p class="text">Jumlah Siswa: 50+</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+      
+          <div class="card-price">
+            <div class="wrapper">
+              <p class="reviews">(10 ulasan)</p>
+              <div class="card-rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+            </div>
+            <p class="price">Gratis</p>
+          </div>
+        </div>
+      </li>
+
+      <!-- ------------------------------------ -->
+      <li>
+        <div class="package-card">
+          <figure class="card-banner">
+            <!-- Link YouTube-->
+            <iframe 
+              width="100%" 
+              height="315" 
+              src="https://www.youtube.com/embed/4HrweW4IqJc" 
+              title="Materi Pembelajaran 1" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </figure>
+      
+          <div class="card-content">
+            <h3 class="h3 card-title">Fisika</h3>
+            <p class="card-text">
+              Fisika adalah ilmu tentang segalanya. Selamat datang, ke ilmu yang mengatur, segala hal di dunia ini.
+            </p>
+            <ul class="card-meta-list">
+              <li class="card-meta-item">
+                <div class="meta-box">
+                  <ion-icon name="time"></ion-icon>
+                  <p class="text">Durasi: 11:26 Menit</p>
+                </div>
+              </li>
+              <li class="card-meta-item">
+                <div class="meta-box">
+                  <ion-icon name="people"></ion-icon>
+                  <p class="text">Jumlah Siswa: 50+</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+      
+          <div class="card-price">
+            <div class="wrapper">
+              <p class="reviews">(10 ulasan)</p>
+              <div class="card-rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+            </div>
+            <p class="price">Gratis</p>
+          </div>
+        </div>
+      </li>
+
+      <!-- ------------------------------------ -->
+      <li>
+        <div class="package-card">
+          <figure class="card-banner">
+            <!-- Link YouTube  -->
+            <iframe 
+              width="100%" 
+              height="315" 
+              src="https://www.youtube.com/embed/4HrweW4IqJc" 
+              title="Materi Pembelajaran 1" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </figure>
+      
+          <div class="card-content">
+            <h3 class="h3 card-title">Fisika</h3>
+            <p class="card-text">
+              Fisika adalah ilmu tentang segalanya. Selamat datang, ke ilmu yang mengatur, segala hal di dunia ini.
+            </p>
+            <ul class="card-meta-list">
+              <li class="card-meta-item">
+                <div class="meta-box">
+                  <ion-icon name="time"></ion-icon>
+                  <p class="text">Durasi: 11:26 Menit</p>
+                </div>
+              </li>
+              <li class="card-meta-item">
+                <div class="meta-box">
+                  <ion-icon name="people"></ion-icon>
+                  <p class="text">Jumlah Siswa: 50+</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+      
+          <div class="card-price">
+            <div class="wrapper">
+              <p class="reviews">(10 ulasan)</p>
+              <div class="card-rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+            </div>
+            <p class="price">Gratis</p>
+          </div>
+        </div>
+      </li>
+
+      <!-- ------------------------------------ -->
+      <li>
+        <div class="package-card">
+          <figure class="card-banner">
+            <!-- Link YouTube -->
+            <iframe 
+              width="100%" 
+              height="315" 
+              src="https://www.youtube.com/embed/4HrweW4IqJc" 
+              title="Materi Pembelajaran 1" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </figure>
+      
+          <div class="card-content">
+            <h3 class="h3 card-title">Fisika</h3>
+            <p class="card-text">
+              Fisika adalah ilmu tentang segalanya. Selamat datang, ke ilmu yang mengatur, segala hal di dunia ini.
+            </p>
+            <ul class="card-meta-list">
+              <li class="card-meta-item">
+                <div class="meta-box">
+                  <ion-icon name="time"></ion-icon>
+                  <p class="text">Durasi: 11:26 Menit</p>
+                </div>
+              </li>
+              <li class="card-meta-item">
+                <div class="meta-box">
+                  <ion-icon name="people"></ion-icon>
+                  <p class="text">Jumlah Siswa: 50+</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+      
+          <div class="card-price">
+            <div class="wrapper">
+              <p class="reviews">(10 ulasan)</p>
+              <div class="card-rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+            </div>
+            <p class="price">Gratis</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta" id="contact" style="bottom: 40px;">
+        <div class="container">
+      
+          <div class="cta-content">
+            <p class="section-subtitle">Ayo Mulai Belajar</p>
+      
+            <h2 class="h2 section-title1 text-left">
+              Siap untuk Tingkatkan Pengetahuan Anda? Bergabung dengan Kami!
+            </h2>
+      
+            <p class="section-text">
+              Dapatkan pengalaman belajar yang menyenangkan dan interaktif melalui materi pembelajaran kami. Jangan ragu untuk
+              menghubungi kami jika ada pertanyaan atau butuh bantuan!
+            </p>
+          </div>
+      <img src="./assets/images/client2.png" alt="" style="width: 500px; height: 500px; right: -200px;">
+         
+      
+        </div>
+      </section>
+      
+
+
+    
+  
+    
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-brand">
+  
+          <a href="#" class="logo">
+            <img src="./assets/images/Logo4-removebg-preview.png" alt="Logo Pembelajaran Interaktif">
+          </a>
+  
+          <p class="footer-text">
+          Jelajahi berbagai materi belajar, video tutorial, dan soal latihan yang dirancang untuk meningkatkan pemahaman Anda. Mari belajar bersama kami dan raih prestasi terbaik!
+          </p>
+  
+        </div>
+  
+        <div class="footer-contact">
+  
+          <h4 class="contact-title">Hubungi Kami</h4>
+  
+          <p class="contact-text">
+            Ada pertanyaan? Jangan ragu untuk menghubungi kami!
+          </p>
+  
+          <ul>
+  
+            <li class="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+  
+              <a href="tel:+01123456790" class="contact-link">+01 (123) 4567 90</a>
+            </li>
+  
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+  
+              <a href="mailto:info.pembelajaran.com" class="contact-link">info.pembelajaran.com</a>
+            </li>
+  
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+  
+              <address>Jl. Pendidikan No. 45, Indonesia</address>
+            </li>
+  
+          </ul>
+  
+        </div>
+  
+        <div class="footer-form">
+  
+          <p class="form-text">
+            Berlangganan buletin kami untuk mendapatkan materi terbaru, soal latihan, dan pembaruan menarik lainnya!
+          </p>
+  
+          <form action="" class="form-wrapper">
+            <input type="email" name="email" class="input-field" placeholder="Masukkan Email Anda" required>
+  
+            <button type="submit" class="btn btn-secondary">Berlangganan</button>
+          </form>
+  
+        </div>
+  
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <div class="container">
+  
+        <p class="copyright">
+          &copy; 2024 <a href="#">Platform Pembelajaran Interaktif</a>. Hak cipta dilindungi.
+        </p>
+  
+        <ul class="footer-bottom-list">
+  
+          <li>
+            <a href="#" class="footer-bottom-link">Kebijakan Privasi</a>
+          </li>
+  
+          <li>
+            <a href="#" class="footer-bottom-link">Syarat & Ketentuan</a>
+          </li>
+  
+          <li>
+            <a href="#" class="footer-bottom-link">Bantuan</a>
+          </li>
+  
+        </ul>
+  
+      </div>
+    </div>
+  
+  </footer>
+  
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>

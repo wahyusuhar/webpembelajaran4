@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Pembelajaran</title>
+
+  <link rel="shortcut icon" href="assets/images/laptop.png" type="image/png">
+
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+   <div class="header-top">
+  <div class="container">
+    <a href="tel:+01123456790" class="helpline-box">
+      <div class="icon-box">
+        <ion-icon name="call-outline"></ion-icon>
+      </div>
+      <div class="wrapper">
+        <p class="helpline-title">Untuk Pertanyaan Lebih Lanjut :</p>
+        <p class="helpline-number">+01 (123) 4567 90</p>
+      </div>
+    </a>
+    
+    <div class="header-btn-group">
+      <!-- Pindahkan ikon sosial media ke sini -->
+      <ul class="social-list">
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </a>
+        </li>
+      </ul>
+      
+      <!-- Hapus ikon pencarian -->
+      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <a href="" class="logo">
+          <img src="./assets/images/Logo4-removebg-preview.png" alt="Tourly logo" style="width: 100px; height: 50px;">
+        </a>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/Logo4-removebg-preview.png" alt="Tourly logo">
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="index.html" class="navbar-link" data-nav-link>Beranda</a>
+            </li>
+            <li>
+              <a href="index.html#about" class="navbar-link" data-nav-link>Tentang Kami</a>
+            </li>
+              <li class="dropdown">
+                <a href="#" class="navbar-link" data-nav-link>Materi Pembelajaran</a>
+                <div class="dropdown-content">
+                  <a href="index.html#materials">Materi PDF</a>
+                  <a href="index.html#package">Materi Video</a>
+                  
+             
+              </li>
+              <li>
+                <a href="soal.html#soal" class="navbar-link" data-nav-link>Soal Latihan</a>
+              </li>
+            
+            <li>
+              <a href="quizz.html#quiz" class="navbar-link" data-nav-link>Kuis</a>
+            </li>
+            <li>
+              <a href="contact.html#kontact" class="navbar-link" data-nav-link>Kontak</a>
+            </li>
+          
+           
+          </ul>
+          
+
+
+
+        </nav>
+
+        <!-- <button class="btn btn-primary">Login</button> -->
+         <div class="one">
+          <a href="login.html" >LOGIN</a>
+         </div>
+        
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+      <section class="hero" id="contact">
+        <div class="container">
+      
+          <h2 class="h1 hero-title" style="color: #007bff; text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);">Online Class</h2>
+
+
+      
+          <p class="hero-text">
+            Temukan berbagai materi pembelajaran interaktif yang dirancang untuk membantu kamu berkembang. Dari kursus dasar hingga topik lanjutan, mari mulai perjalananmu menuju pengetahuan yang lebih dalam.
+          </p>
+      
+          <!-- <div class="btn-group">
+            <button class="btn btn-primary">Mulai Belajar</button>
+      
+            <button class="btn btn-secondary" style="width: 200px;">Daftar </button>
+          </div> -->
+      
+        </div>
+      </section>
+      
+
+
+
+
+
+      <section class="course-search">
+        <div class="container">
+          <form action="" class="course-search-form">
+      
+            <div class="input-wrapper">
+              <label for="course-name" class="input-label">Cari Materi Pembelajaran*</label>
+              <input type="text" name="course-name" id="course-name" required placeholder="Masukkan Nama Materi"
+                class="input-field">
+            </div>
+      
+            <div class="input-wrapper">
+              <label for="course-type" class="input-label">Tipe Materi*</label>
+              <select name="course-type" id="course-type" required class="input-field">
+                <option value="">Pilih Tipe Materi</option>
+                <option value="pdf">PDF</option>
+                <option value="video">Video</option>
+                <option value="quiz">Kuis</option>
+              </select>
+            </div>
+      
+            <div class="input-wrapper">
+              <label for="student-level" class="input-label">Tingkat Siswa*</label>
+              <select name="student-level" id="student-level" required class="input-field">
+                <option value="">Pilih Tingkat Siswa</option>
+                <option value="beginner">Pemula</option>
+                <option value="intermediate">Menengah</option>
+                <option value="advanced">Lanjutan</option>
+              </select>
+            </div>
+      
+            <div class="input-wrapper">
+              <label for="date" class="input-label">Tanggal Akses*</label>
+              <input type="date" name="date" id="date" required class="input-field">
+            </div>
+      
+            <button type="submit" class="btn btn-secondary">Cari Materi</button>
+      
+          </form>
+        </div>
+      </section>
+
+
+
+
+<!-- Contact Section -->
+<section id="kontact" class="contact-section">
+  <div class="container">
+    <h2 class="section-title">Hubungi Kami</h2>
+
+    <div class="contact-wrapper">
+ <!-- Maps -->
+<div class="contact-map">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63738.9293681686!2d98.61737894755668!3d3.595195295870535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131bc9a36dc9f%3A0x303131bc9a3f2c9f!2sMedan%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
+    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <form action="contact" method="post">
+          <div class="form-group">
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Kirim Pesan</button>
+        </form>
+<!-- Social Media Icons -->
+<div class="social-icons">
+  <a href="https://facebook.com" target="_blank" class="social-icon facebook">
+    <i class="fa-brands fa-facebook"></i> Facebook
+  </a>
+  <a href="https://tiktok.com" target="_blank" class="social-icon tiktok">
+    <i class="fa-brands fa-tiktok"></i> TikTok
+  </a>
+  <a href="https://instagram.com" target="_blank" class="social-icon instagram">
+    <i class="fa-brands fa-instagram"></i> Instagram
+  </a>
+  <a href="https://wa.me/your-number" target="_blank" class="social-icon whatsapp">
+    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+  </a>
+</div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ 
+      
+   
+      
+      
+      
+
+
+      
+      
+
+
+    
+    
+    
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+  <footer class="footer" style="margin-top: 25px;">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-brand">
+  
+          <a href="#" class="logo">
+            <img src="./assets/images/Logo4-removebg-preview.png" alt="Logo Pembelajaran Interaktif">
+          </a>
+  
+          <p class="footer-text">Jelajahi berbagai materi belajar, video tutorial, dan soal latihan yang dirancang untuk meningkatkan pemahaman Anda. Mari belajar bersama kami dan raih prestasi terbaik!
+          </p>
+  
+        </div>
+  
+        <div class="footer-contact">
+  
+          <h4 class="contact-title">Hubungi Kami</h4>
+  
+          <p class="contact-text">
+            Ada pertanyaan? Jangan ragu untuk menghubungi kami!
+          </p>
+  
+          <ul>
+  
+            <li class="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+  
+              <a href="tel:+01123456790" class="contact-link">+01 (123) 4567 90</a>
+            </li>
+  
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+  
+              <a href="mailto:info.pembelajaran.com" class="contact-link">info.pembelajaran.com</a>
+            </li>
+  
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+  
+              <address>Jl. Pendidikan No. 45, Indonesia</address>
+            </li>
+  
+          </ul>
+  
+        </div>
+  
+        <div class="footer-form">
+  
+          <p class="form-text">
+            Berlangganan buletin kami untuk mendapatkan materi terbaru, soal latihan, dan pembaruan menarik lainnya!
+          </p>
+  
+          <form action="" class="form-wrapper">
+            <input type="email" name="email" class="input-field" placeholder="Masukkan Email Anda" required>
+  
+            <button type="submit" class="btn btn-secondary">Berlangganan</button>
+          </form>
+  
+        </div>
+  
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <div class="container">
+  
+        <p class="copyright">
+          &copy; 2024 <a href="#">Platform Pembelajaran Interaktif</a>. Hak cipta dilindungi.
+        </p>
+  
+        <ul class="footer-bottom-list">
+  
+          <li>
+            <a href="#" class="footer-bottom-link">Kebijakan Privasi</a>
+          </li>
+  
+          <li>
+            <a href="#" class="footer-bottom-link">Syarat & Ketentuan</a>
+          </li>
+  
+          <li>
+            <a href="#" class="footer-bottom-link">Bantuan</a>
+          </li>
+  
+        </ul>
+  
+      </div>
+    </div>
+  
+  </footer>
+  
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
