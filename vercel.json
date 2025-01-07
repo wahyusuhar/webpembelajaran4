@@ -1,26 +1,3 @@
 {
-    "version": 2,
-    "routes": [
-      {
-        "src": "/",
-        "dest": "/index.html"
-      },
-      {
-        "src": "/soal",
-        "dest": "/soal.html"
-      },
-      {
-        "src": "/contact",
-        "dest": "/contact.html"
-      },
-      {
-        "src": "/login",
-        "dest": "/login.html"
-      },
-      {
-        "src": "/quiz",
-        "dest": "/quiz.html"
-      }
-    ]
-  }
-  
+  "rewrites": [{ "source": "/", "destination": "/index.html" }]
+}
